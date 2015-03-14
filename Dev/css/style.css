@@ -1,0 +1,144 @@
+table {
+	display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+    margin: 0 auto;
+    background: #eee;
+
+}
+
+/*SIDEBAR*/
+
+.sidebar-container {
+  background: #2b303b;
+  bottom: 0;
+  color: purple;
+  font-family: "Futura", Verdana, sans-serif;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 800px;
+  transition-duration: .7s;
+/*  left: -150px;
+*/
+}
+.sidebar-container a {
+	background: #eee;
+	padding: 20px 0 20px 0;
+	border: 1px solid #2b303b;
+	display: block;
+	text-decoration: none;
+	margin-left: -40px;
+	text-align: center;
+}
+/*.sidebar-container:hover {
+	margin-left: -175px;
+	transition-duration: .7s;
+}*/
+
+/*TOP NAVIGATION */
+
+.top-nav {
+  height: 50px;
+  width: 100%;
+  text-align: right;
+}
+.top-nav a {
+  text-align: right;
+  padding: 20px;
+  background: #eee;
+}
+
+
+
+/*DASHBOARD GRID LAYOUT*/
+.dashboard {
+  float: right;
+  width: 83%;
+  text-align: center;
+  font-family: "Futura", Verdana, sans-serif;
+
+}
+
+.dash_title {
+  font-family: ;
+  margin: 0 0 3% 0;
+  text-align: center;
+
+}
+
+.left {
+  float: left;
+  width: 100%;
+}
+
+.game_stats {
+  height: 250px;
+  background: #eee;
+  margin: 0 0 10px 0;
+  width: 72%;
+  float: left;
+  border: 1px solid black;
+}
+
+.current-badge {
+  background: #eee;
+  margin: 0 3% 0 0;
+  width: 22%;
+  float: left;
+  height: 240px;
+  border: 1px solid black;
+}
+.cb-chart {
+  background: green;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+
+}
+
+.next-badge {
+  background: #eee;
+  margin: auto;
+  width: 22%;
+  float: left;
+  height: 240px;
+  border: 1px solid black;
+}
+.nb-chart {
+  background: blue;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+.third-badge {
+  background: #eee;
+  margin: auto;
+  width: 22%;
+  float: left;
+  height: 240px;
+  border: 1px solid black;
+  margin: 0 0 0 2.8%;
+}
+.tb-chart {
+  background: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.leaderboard {
+  height: 500px;
+  background: #eee;
+  width: 25%;
+  float: right;
+  margin: 0 0 0 15px;
+  border: 1px solid black;
+}
+
+
