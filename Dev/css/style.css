@@ -42,10 +42,11 @@ ul {
   display: block;
   text-decoration: none;
 }
-/*.sidebar-container:hover {
-  margin-left: -175px;
-  transition-duration: .7s;
-}*/
+.sidebar-container a:hover {
+  background: #eee;
+/*  margin-left: -175px;
+  transition-duration: .7s;*/
+}
 
 /*TOP NAVIGATION */
 
