@@ -58,6 +58,9 @@ ul {
   text-align: right;
   padding: 20px;
 }
+.top-nav a:hover {
+  background: #70798C;
+}
 
 
 
