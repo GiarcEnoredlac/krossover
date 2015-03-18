@@ -3,19 +3,21 @@
 <head>
 	<title>Krossover Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootsliapcdn.com/bootsliap/3.3.2/css/bootsliap.min.css"> -->
 	 <!-- <script src="https://maxcdn.bootsliapcdn.com/bootsliap/3.3.2/js/bootsliap.min.js"></script> -->
 </head>
 <body>
 	<!-- <div class='container'>
 		<div class='row'> -->
-			<div class='sidebar-container col-md-3'>
+			<div class='sidebar-container'>
 				<ul>
-					<li><a href="#">Krossover Konnect</a></li>
+					<li class='logo'><a href="#"><img src="images/Krossover logo.png"></a></li>
 					<li><a href="#">Dashboard</a></li>
-					<li><a href="#">Profile</a></li>
+					<li><a href="profile.html">Profile</a></li>
 					<li><a href="#">Leaderboard</a></li>
-					<li><a href="#">Badges/liaining</a></li>
+					<li><a href="#">Badges/Training</a></li>
 					<li><a href="#">Support</a></li>
 					<li><a href="#">Chat</a></li>
 				</ul>
@@ -26,45 +28,64 @@
 <div class='dashboard'>
 <!-- 	<div class='container'>-->
 	<div class='top-nav'>
-		<a href="#">Notification icon</a>
+		<button type="button" class="btn btn-default btn-lg">
+  			<span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>
+			</button>	
 		<a href="#">My Name</a>
 	</div>
 	<div class="dashboard-content">
 		<div class='dash_title'>
-	 		<h1>Welcome, Mr. Dude</h1>
 	 	</div>
 		<div class='row .col-md-9 left'>
 		<div class='game_stats panel'>
-			<h2>Game Stats by day, week and month in a graph</h2>
-		</div>
+			<h2>Game Stats</h2>
+			<ul>
+				<a href="#">Day |</a>
+				<a href="#">Week |</a>
+				<a href="#">Month</a>
+			</ul>	
+	</div>
 		 <div class='leaderboard panel'>
 		 	<h2>Leaderboard</h2>
-		 	<h3>Top 5 displayed</h3>
-		 	<h3>Current indexer rank</h3>
+		 	<h3>Top 5 in region</h3>
 		 	<table>
+		 		<ul>
 		 		<li>Mike</li>
 		 		<li>Banun</li>
 		 		<li>Stefan</li>
 		 		<li>Peter</li>
 		 		<li>Craig</li>
+		 		</ul>
 		 	</table>
 		 </div>
 		<div class='current-badge panel'>
 			<h2>Current badge</h2>
-			<div class='cb-chart'></div>
+			<div class='cb-chart'>
+				<div id="circle"></div>
+			</div>
 		</div>
 		<div class='next-badge panel'>
-			<h2>Progress next</h2>
+			<h2>Next Badge</h2>
 			<div class='nb-chart'></div>
 		</div>
 		<div class='third-badge panel'>
 			<h2>Earnings YTD</h2>
-			<div class='tb-chart'></div>
+			<div class='tb-chart'>
+				<p>$0.00</p>
+			</div>
 		</div>
 		</div>
 	</div>
 <!-- 	</div> -->
 </div>
-	
+	<script>
+    $('#circle').circleProgress({
+        value: 0.75,
+        size: 80,
+        fill: {
+            gradient: ["red", "orange"]
+        }
+    });
+</script>
 </body>
 </html>
